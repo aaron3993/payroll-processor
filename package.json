@@ -1,0 +1,41 @@
+{
+  "name": "se-challenge-payroll",
+  "version": "1.0.0",
+  "description": "Applicants for the Full-stack Developer role at Wave must complete the following challenge, and submit a solution prior to the onsite interview.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "db:up": "npx knex migrate:latest && npx knex seed:run",
+    "db:down": "npx knex migrate:rollback --all",
+    "db:reset": "npm run db:down && npm run db:up"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wvchallenges/se-challenge-payroll.git"
+  },
+  "keywords": [],
+  "author": "Aaron Sham",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wvchallenges/se-challenge-payroll/issues"
+  },
+  "homepage": "https://github.com/wvchallenges/se-challenge-payroll#readme",
+  "dependencies": {
+    "csv-parser": "^3.2.0",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "jest": "^29.7.0",
+    "knex": "^3.1.0",
+    "moment": "^2.30.1",
+    "multer": "^1.4.5-lts.1",
+    "pg": "^8.13.3",
+    "supertest": "^7.0.0",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
+}
