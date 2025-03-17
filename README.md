@@ -42,3 +42,12 @@
     ```sh
     npm run db:reset
     ```
+
+**If using Codespaces dev container**
+
+1. In the current repository, click on the **Code** button, then navigate to the **Codespaces** tab and click **Start Codespace** on the `master` branch.
+2. Once the Codespace is loaded, open the **Ports** panel from the **Activity Bar** on the left side, and set the port to **Public**.
+3. Run the following command to reset the database:
+   ```bash
+   npm run db:reset
+4. After the database is reset, get the **URL** of the Codespace from the **Ports** panel in the **Activity Bar** to make requests to the application.
