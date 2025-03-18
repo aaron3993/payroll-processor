@@ -1,11 +1,38 @@
 [Database design](https://app.eraser.io/workspace/3NHeCDBLpOkdqjHbpO2q?origin=share&elements=eCFSZuJ3_OK5XyjWsyz6mA)
 
-(![Database schema](<Screen Shot 2025-03-13 at 4.24.11 PM.png>))
+![Database schema](<Screen Shot 2025-03-13 at 4.24.11 PM.png>)
 
-1. Instructions on how to build/run your application
+# Prerequisites
 
-**Setup Instructions**  
+Before setting up the project, ensure you have the following installed on your system:
 
+- **Node.js** (LTS version recommended) – [Download here](https://nodejs.org/)
+- **npm** (comes with Node.js) – Verify installation with:
+  ```sh
+  npm -v
+
+**PostgreSQL** (latest stable version) – [Download here](https://www.postgresql.org/)
+
+ Ensure PostgreSQL is running and accessible.
+ Verify installation with:
+
+ psql --version
+
+**If using local devl container:**
+Before using Docker, ensure you have the following installed:
+
+- **Docker** – [Download here](https://www.docker.com/products/docker-desktop)
+  - Verify installation with:
+    ```sh
+    docker --version
+    ```
+
+# Setup Instructions
+
+1. Clone this repository
+   ```sh
+   git clone https://github.com/aaron3993/payroll-processor.git
+   ```
 1. Open **PostgreSQL** using `psql`:  
    ```sh
    psql -U your_username
@@ -42,6 +69,17 @@
     ```sh
     npm run db:reset
     ```
+
+**If using local dev container**
+
+1. Ensure Docker is running
+2. Clone this repository
+   ```sh
+   git clone https://github.com/aaron3993/payroll-processor.git
+   ```
+3. Open the folder in vscode as a workspace
+4. Type `cmd + shift + p` to open the command palette
+5. Type and select 'Dev Containers: Rebuild and Reopen in Container`
 
 **If using Codespaces dev container**
 
